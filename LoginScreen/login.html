@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - GetYA!</title>
+
+  <!-- Bootstrap local -->
+  <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header class="text-center py-3 bg-dark text-white position-relative">
+    <h1>GetYA!</h1>
+    <button id="modoOscuro" class="btn btn-outline-light btn-sm position-absolute top-0 end-0 m-3">🌙</button>
+  </header>
+
+  <main class="container d-flex flex-column align-items-center justify-content-center" style="min-height: 85vh;">
+    <section id="login" class="p-4 rounded shadow bg-white text-center" style="max-width: 400px; width: 100%;">
+      <h2 class="mb-3">Iniciar sesión</h2>
+      <p class="text-muted">Accede a tu cuenta para ver el estado de tus envíos</p>
+      <input type="email" id="email" class="form-control mb-3" placeholder="Correo electrónico">
+      <input type="password" id="password" class="form-control mb-3" placeholder="Contraseña">
+
+      <button id="btn-login" class="btn btn-primary w-100 mb-3">Continuar</button>
+
+      <p>o</p>
+      <div class="d-flex flex-column gap-2">
+        <button class="btn btn-outline-danger w-100">Continuar con Google</button>
+        <button class="btn btn-outline-dark w-100">Continuar con Apple</button>
+      </div>
+
+      <p class="mt-4 small text-muted">
+        ¿No tienes una cuenta? <a href="#" class="text-decoration-none fw-semibold">Regístrate</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    <small>© 2025 GetYA! | Todos los derechos reservados</small>
+  </footer>
+
+  <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

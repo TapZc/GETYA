@@ -1,0 +1,33 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Modo oscuro */
+.oscuro {
+  background-color: #282a2b;
+  color: #000000;
+}
+
+.oscuro #login {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+
+.oscuro input {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

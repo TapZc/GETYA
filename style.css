@@ -1,0 +1,204 @@
+/* ----- General ----- */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  transition: background 0.3s, color 0.3s;
+}
+
+.oscuro {
+  background: linear-gradient(135deg, #010a5a 0%, rgb(46, 46, 46) 100%);
+  color:#ffffff
+}
+
+/* ----- Hero Section ----- */
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #000000 0%, #010a5a 100%);
+  background-attachment: fixed;
+  color: white;
+}
+
+/* ----------------------------------
+   🔹 Sección Conócenos
+---------------------------------- */
+#conocenos {
+  background: linear-gradient(180deg, #0a0f3c 0%, #18224f 50%, #020c1b 100%);
+  padding: 80px 20px;
+  color: white;
+}
+
+#conocenos h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#conocenos p {
+  color: #d0d0d0;
+}
+
+.integrante {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.integrante img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.integrante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+/* Video del speech */
+video {
+  border: 3px solid #fff;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+/* ----- Mockups Section ----- */
+#mockups {
+  color: #fff;
+  padding: 200px 200px;
+  transition: background 0.4s ease-in-out;
+}
+
+#mockups h2 {
+  color: rgb(0, 0, 0);
+  text-shadow: 
+        -1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white,
+        1px -1px 0 white;
+  font-size: 50px;
+}
+#mockups h5 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+
+/* ----- Mockup Card ----- */
+.mockup-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Centra el contenido horizontalmente */
+  justify-content: center;   /* Centra verticalmente dentro de la tarjeta */
+  background: linear-gradient(180deg, #000000 0%, #020a52 100%);
+  border-radius: 25px;
+  padding: 40px 20px;
+  width: 80%;                /* Reduce el ancho total */
+  max-width: 600px;          /* Evita que sea demasiado grande en pantallas amplias */
+  margin: 0 auto 50px;       /* Centra y da espacio entre tarjetas */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Centrar y ajustar el tamaño del teléfono */
+.phone {
+  width: 230px;             /* Más pequeño */
+  height: 450px;            /* Ajustado */
+  border: 7px solid #111;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 70px rgb(255, 251, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+}
+
+.phone .content {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+.phone .content.day {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.phone .content.night {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Inputs y botones en mockups */
+.phone input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  outline: none;
+}
+
+.phone button {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* ----- Mockup 1 (Splash Screen) ----- */
+.phone.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.splash-content .logo {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.splash-content p {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #000000;
+}
+
+.splash-content {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ----- Botones de toggle ----- */
+.toggle {
+  background: #ffffff;
+}
+
+.toggle:hover {
+  color:#fff
+  
+}

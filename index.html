@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetYA! – Conectamos Personas, Entregamos Confianza</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">GetYA!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#conocenos">Conocenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mockups">Mockups</a></li>
+          <li class="nav-item"><a class="nav-link" href="LoginScreen/login.html">Iniciar sesión</a></li>
+          <li class="nav-item">
+            <button id="modoOscuro" class="btn btn-outline-light btn-sm ms-3">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div>
+      <h1 class="display-4 fw-bold">Bienvenidos a GetYA!</h1>
+      <p class="lead mb-4">Conectamos Personas, Entregamos Confianza</p>
+      <a href="LoginScreen/login.html" class="btn btn-light btn-lg shadow">Inicia Sesion</a>
+    </div>
+  </header>
+
+  <!-- Conócenos -->
+  <section id="conocenos" class="py-5 text-center text-white">
+    <div class="container">
+      <h2 class="fw-bold mb-4">Conócenos</h2>
+      <p class="mb-5 fs-5">
+        Somos un equipo apasionado que busca mejorar la experiencia de entrega y conexión entre personas. 
+        Nuestro objetivo con <strong>GetYA!</strong> es ofrecer un servicio rápido, confiable y transparente para el seguimiento de envíos.
+      </p>
+
+      <!-- Integrantes -->
+      <div class="row justify-content-center g-4">
+        <div class="col-md-3">
+          <div class="card integrante p-3">
+            <img src="images/Juan_Marin.png" class="card-img-top rounded-circle" alt="Juan Marín">
+            <div class="card-body">
+              <h5 class="card-title">Juan Marín</h5>
+              <p class="card-text"> CEO. Dirige y coordina el proyecto, impulsando la innovación y el liderazgo en GetYA!.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card integrante p-3">
+            <img src="images/Oscar_Rodriguez.jpeg" class="card-img-top rounded-circle" alt="Oscar Rodríguez">
+            <div class="card-body">
+              <h5 class="card-title">Óscar Rodríguez</h5>
+              <p class="card-text"> Frontend Developer. Diseña la interfaz visual y crea una experiencia moderna para los usuarios.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card integrante p-3">
+            <img src="images/Santiago_Rojas.png" class="card-img-top rounded-circle" alt="Santiago Rojas">
+            <div class="card-body">
+              <h5 class="card-title">Santiago Rojas</h5>
+              <p class="card-text"> Backend Developer. Desarrolla la lógica del sistema y mantiene la conexión con la base de datos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card integrante p-3">
+            <img src="images/Sebastian_Bejarano.png" class="card-img-top rounded-circle" alt="Sebastián Bejarano">
+            <div class="card-body">
+              <h5 class="card-title">Sebastián Bejarano</h5>
+              <p class="card-text"> Gestor Base de Datos. Administra y optimiza los datos de GetYA!, garantizando eficiencia y seguridad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Speech -->
+      <div class="mt-5">
+        <h3 class="mb-3">Nuestro Speech</h3>
+        <video src="video/GetYa_Speech.mp4" controls class="rounded shadow" width="70%"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mockups -->
+  <section id="mockups" class="container text-center my-5">
+    <h2 class="subtitulo">Nuestros Mockups</h2>
+
+    <!-- Mockup 1 (estático) -->
+    <div class="mockup-card my-5">
+      <h5>Pantalla de Bienvenida</h5>
+      <div class="phone splash">
+        <div class="splash-content">
+          <img src="images/Logo_GetYa.png" alt="Logo GetYA" class="logo">
+          <p>Conectamos Personas, Entregamos Confianza</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mockup 2 -->
+    <div class="mockup-card my-5">
+      <h5>Pantalla de Login</h5>
+      <div class="phone" id="mockup2">
+        <div class="content day">
+          <h3>Login</h3>
+          <input type="text" placeholder="Correo electrónico" />
+          <input type="password" placeholder="Contraseña" />
+          <button class="btn btn-primary w-100">Entrar</button>
+        </div>
+      </div>
+      <button class="btn btn-outline-dark mt-2 toggle" data-target="mockup2">Cambiar modo</button>
+    </div>
+
+    <!-- Mockup 3 -->
+    <div class="mockup-card my-5">
+      <h5>Rastreo del paquete</h5>
+      <div class="phone" id="mockup3">
+        <div class="content day">
+          <h3>Rastrear Pedido</h3>
+          <input type="text" placeholder="Código de envío" />
+          <button class="btn btn-success w-100">Buscar</button>
+        </div>
+      </div>
+      <button class="btn btn-outline-dark mt-2 toggle" data-target="mockup3">Cambiar modo</button>
+    </div>
+
+    <!-- Mockup 4 -->
+    <div class="mockup-card my-5">
+      <h5>Estado del envío</h5>
+      <div class="phone" id="mockup4">
+        <div class="content day">
+          <h3>Estado de tu envío</h3>
+          <div class="progress my-3" style="height: 25px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 60%">
+              En camino (60%)
+            </div>
+          </div>
+          <p>Tu paquete llegará pronto 🚚</p>
+        </div>
+      </div>
+      <button class="btn btn-outline-dark mt-2 toggle" data-target="mockup4">Cambiar modo</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-white">
+    <small>© 2025 GetYA! | Derechos Reservados</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
